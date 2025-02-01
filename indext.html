@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy UI</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        /* Style for the celebration overlay */
+        #celebration-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            animation: fadeIn 0.8s ease-out 0s forwards; /* Added fade-in animation */
+            display:none
+        }
+
+        #celebration-text {
+            font-size: 3em;
+            text-align: center;
+            animation: zoomIn 1s ease-out 0.2s forwards, fadeOut 1.5s ease-in 4s forwards; /* Added zoom and fade animations*/
+            transform: scale(0); /* Start with a scaled down element */
+            opacity: 0; /* Start with no opacity*/
+        }
+         /* Animations */
+         @keyframes fadeIn{
+             from{opacity:0;}
+             to{opacity:1;display:flex}
+         }
+         @keyframes zoomIn{
+             from {transform: scale(0); opacity:0;}
+             to{transform: scale(1); opacity:1;}
+        }
+         @keyframes fadeOut{
+             to {opacity:0; display:none;}
+         }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+   <!-- The celebration overlay -->
+    <div id="celebration-overlay">
+        <h1 id="celebration-text">Happy Birthday Honey</h1>
+    </div>
+    <div class="background"></div>
+    
+    <nav class="nav">
+        <a href="my_love.html">
+         <button class="nav-button">My Love</button>
+        </a>
+
+        <a href="my_life.html">
+         <button class="nav-button">My Life</button>
+        </a>
+    </nav>
+    
+    <main class="content">
+        <!-- <input type="text" class="input" placeholder="Enter text..."> -->
+        <div class="happy"> 
+        <h1>Happy Birthday Dear</h1>
+        </div>
+        <div class="shayari-container">            
+            <!-- <h1>To You, My Love</h1>              -->
+            <p>
+                <p class="">
+                    <div class="heart-container">
+                        <div class="heart"></div>
+                    </div>
+                    <h3> मेरी जान,</h3>
+                </p>
+                
+                🎂 जन्मदिन मुबारक हो मेरी जिंदगी की सबसे खूबसूरत इंसान को! 🎂<br>
+                <br>
+                
+                इस खास दिन पर, मैं बस यह कहना चाहता हूँ कि तुम मेरी ज़िंदगी का सबसे अनमोल हिस्सा हो। तुम सिर्फ मेरी मोहब्बत नहीं, बल्कि मेरी खुशी, मेरी शांति और मेरी सबसे बड़ी दुआ भी हो। तुम्हारी हंसी मेरे सबसे अंधेरे दिनों को रोशन कर देती है, और तुम्हारा प्यार मेरी दुनिया को जादुई बना देता है।<br>
+                <br>
+                मैं दुआ करता हूँ कि यह साल तुम्हारे लिए अपार खुशियाँ, सफलता और प्यार लेकर आए—ठीक वैसे ही, जैसे तुम हर दिन मेरी ज़िंदगी में लाती हो। तुम्हारे सभी सपने पूरे हों और तुम हमेशा खुशियों से घिरी रहो।<br>
+                <br>
+                तुम जैसी हो, वैसी ही रहो—इतनी प्यारी, इतनी हसीन और इतनी दिल के करीब। मैं वादा करता हूँ कि तुम्हारे साथ हमेशा रहूँगा, हर पल को खास बनाऊंगा और तुम्हारी हर खुशी का ख्याल रखूँगा।<br>
+                <br>
+                💕 तुम्हारे लिए एक ऐसा दिन जो प्यार, हंसी और दुनिया की सारी खुशियों से भरा हो! 💕<br>
+                <br>
+                💖 जन्मदिन मुबारक हो मेरी जान! 💖<br>
+                <br>
+                तुम्हारी मुस्कान से बेहतर कोई तोहफा नहीं है,😊<br>
+                <br>
+                <p class="name">
+                हमेशा तुम्हारा,<br>
+                पता ही नहीं 💝<br>
+                </p>
+        </p>
+    </div>    
+    </main>
+    
+    <footer class="footer">
+        <button class="icon-button">❤</button>
+        <div class="divider"></div>
+        <a href="magic.html">   
+        <button class="magic-button">✨ Magic</button>
+        </a>
+        <div class="divider"></div>
+        <button class="icon-button">❤</button>
+    </footer>
+</body>
+</html>
