@@ -127,15 +127,17 @@ button:hover {
     color: #FFB7D9;
 }
 
-/* Main Content */
-main {
+/* Main Content (Modified) */
+main.content { /* Specific selector for main content */
     max-width: 90%;
-    margin: 0px ;
+    margin: 0px; 
     text-align: center;
-    padding:0px;
-    position: relative;
-    z-index: 10;
-
+    padding: 0px;
+    position: relative; /* Keep relative positioning */
+    z-index: 10;    /* Ensure that it is below the footer */
+    max-height: calc(100vh - 110px); /* Limit height to the viewport minus header/footer */
+    overflow-y: auto; /* Enable vertical scroll if content overflows */
+    margin-bottom:20px; /* add margin so the content dont go behind footer */
 }
 
 /* Responsive Heart */
@@ -212,17 +214,6 @@ input {
 
 input::placeholder {
     color: rgba(255, 183, 217, 0.5);
-}
-
-/* Footer */
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 12px;
 }
 
 /* Title */
@@ -303,8 +294,16 @@ h1 {
         font-size: 1.6em;
     }
 
-    footer {
-        margin-top: 30px;
-        padding: 30px;
-    }
+/* Footer (Modified) */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 12px;
+   flex-wrap: wrap;
+   z-index: 100; /* Make sure its on top */
+}
 }
