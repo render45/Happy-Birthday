@@ -1,5 +1,5 @@
 // 🔹 Set "true" to work freely, "false" to enable timer
-const devMode = false;
+const devMode = true;
 
 // 🔹 Set open and close times (IST converted to UTC)
 const openTime = new Date("2025-02-02T06:30:00Z"); // 12:00 PM IST
