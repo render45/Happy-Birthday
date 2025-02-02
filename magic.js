@@ -3,7 +3,7 @@ const devMode = true;
 
 // 🔹 Set open and close times (IST converted to UTC)
 const openTime = new Date("2025-02-02T06:30:00Z"); // 12:00 PM IST
-const closeTime = new Date("2025-02-02T06:35:00Z"); // 12:05 PM IST
+const closeTime = new Date("2025-02-03T06:35:00Z"); // 12:05 PM IST
 
 function updateCountdown() {
     if (devMode) {
